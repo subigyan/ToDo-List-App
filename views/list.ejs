@@ -1,0 +1,41 @@
+<%- include("header") %>
+
+    <div class="main-container">
+        <div class="conatiner" id="container1"></div>
+        <div class="conatiner" id="container2"></div>
+        <div class="conatiner" id="container3"></div>
+        <div class="conatiner" id="container4"></div>
+    </div>
+
+    <div class="main">
+        <div class="box" id="heading">
+            <h1>
+                <%=title%>
+            </h1>
+        </div>
+
+
+
+        <div class="box">
+            <% newListItems.forEach(item=>{%>
+                <form action="/delete" method="POST" ">
+                    <div class="item">
+                        <input type="checkbox" name="checkbox" value="<%= item._id %>" onchange="this.form.submit()"">
+                        <p>
+                            <%= item.name %>
+                        </p>
+                    </div>
+                    <input type="hidden" name="listName" value="<%= title.split(" ")[0].toLowerCase()%>">
+                </form>
+
+
+                <% }) %>
+                    <form class="item" action="/" method="POST">
+                        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+                        <button type="submit" name="submitBtn" value="<%=title.split(" ")[0].toLowerCase()%>">+</button>
+                    </form>
+        </div>
+
+    </div>
+
+    <%- include("footer") %>

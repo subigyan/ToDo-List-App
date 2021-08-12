@@ -1,0 +1,163 @@
+html {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+
+
+/* 
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body{
+  position: relative;
+}
+.main-container{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #52006A;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+.conatiner{
+  height: 50vh;
+  width: 50vw;
+  
+  transform: rotate(45deg);
+}
+
+#container1{
+  background-color: rgb(195, 0, 255);
+}
+#container2{
+  background-color: #CD113B;
+}
+#container3{
+  background-color: #FF7600;
+}
+#container4{
+  background-color: #FFA900;
+}
+
+.main{
+  height: 100px;
+  
+  z-index: 1;
+  
+  background-color: #F9F9F9;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+
+
+
+
+ */
+
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #A683E3;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

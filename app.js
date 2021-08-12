@@ -16,7 +16,7 @@ app.use(express.static("public"));
 // let workItems = ["work"];
 
 mongoose.connect(
-  "mongodb+srv://admin-subi:test123456789@cluster0.jhfpy.mongodb.net/todoListDB",
+  "mongodb://localhost:27017/todoListDB",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
